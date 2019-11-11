@@ -1,8 +1,15 @@
 from django.shortcuts import render
-
+from django.utils import timezone
+from .models import Post
 # Create your views here.
 
-def post_list(request):
-    return render(request, 'blog/post_list.html', {}) 
 
-##esto es una funcion def y regresa una funcion render que construye nuestra plantilla.
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
+
+
+
+
+
+
+
